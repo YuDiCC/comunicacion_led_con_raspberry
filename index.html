@@ -6,7 +6,7 @@
     <title>Control de LED con Pico W</title>
     <script>
         function controlarLed(accion) {
-            fetch("http://192.168.225.212/" + accion)  // 🔹 Cambia la IP por la de tu Pico W
+            fetch("http://192.168.225.35/" + accion)  // 🔹 Cambia la IP por la de tu Pico W
                 .then(response => console.log("Comando enviado: " + accion))
                 .catch(error => console.error("Error:", error));
         }
