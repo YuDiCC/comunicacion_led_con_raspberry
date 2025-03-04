@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de LED con Pico W</title>
+    <script>
+        function controlarLed(accion) {
+            fetch("http://<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de LED con Pico W</title>
+    <script>
+        function controlarLed(accion) {
+            fetch("http://192.168.225.35/" + accion)  // 🔹 Cambia la IP por la de tu Pico W
+                .then(response => console.log("Comando enviado: " + accion))
+                .catch(error => console.error("Error:", error));
+        }
+    </script>
+</head>
+<body>
+    <h1>Control de LED con Raspberry Pi Pico W</h1>
+    <button onclick="controlarLed('on')">Encender</button>
+    <button onclick="controlarLed('off')">Apagar</button>
+</body>
+</html>
+/" + accion)  // 🔹 Cambia la IP por la de tu Pico W
+                .then(response => console.log("Comando enviado: " + accion))
+                .catch(error => console.error("Error:", error));
+        }
+    </script>
+</head>
+<body>
+    <h1>Control de LED con Raspberry Pi Pico W</h1>
+    <button onclick="controlarLed('on')">Encender</button>
+    <button onclick="controlarLed('off')">Apagar</button>
+</body>
+</html>
