@@ -11,7 +11,7 @@
       return;
     }
     
-    fetch(`http://192.168.225.212/${estado}`)
+    fetch(`http://192.168.225.35/${estado}`)
       .then(response => response.text())
       .then(data => console.log(data))
       .catch(error => console.error("Error:", error));
@@ -28,4 +28,3 @@
     <button onclick="controlarLed('off')">Apagar</button>
 </body>
 </html>
-
